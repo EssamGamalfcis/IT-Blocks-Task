@@ -1,0 +1,44 @@
+﻿@model Domain.User
+
+@{
+    ViewData["Title"] = "Details";
+    Layout = "~/Views/Shared/_Author_Admin_Layout.cshtml";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>User</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayName("Author First Name")
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.UserFname)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayName("Author Last Name")
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.UserLname)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayName("Login Id")
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.UserLoginId)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayName("Login Password")
+        </dt>
+        <dd class = "col-sm-10">
+            @Html.DisplayFor(model => model.UserLoginPasswrod)
+        </dd>
+
+    </dl>
+</div>
+<div>
+    <input type="button" value="Edit" class="btn btn-primary" onclick="location.href='@Url.Action("Edit", "AuthorAdmin")?id=' + @Model.UserId" /> |
+    <a asp-action="Index">Back to List</a>
+</div>

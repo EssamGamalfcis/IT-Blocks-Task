@@ -1,0 +1,14 @@
+C:\Users\essam\OneDrive\Desktop\IT-Blocks_Task\Code\IT-Blocks_Task\Service\bin\Debug\netcoreapp2.2\Service.deps.json
+C:\Users\essam\OneDrive\Desktop\IT-Blocks_Task\Code\IT-Blocks_Task\Service\bin\Debug\netcoreapp2.2\Service.dll
+C:\Users\essam\OneDrive\Desktop\IT-Blocks_Task\Code\IT-Blocks_Task\Service\bin\Debug\netcoreapp2.2\Service.pdb
+C:\Users\essam\OneDrive\Desktop\IT-Blocks_Task\Code\IT-Blocks_Task\Service\obj\Debug\netcoreapp2.2\Service.csprojAssemblyReference.cache
+C:\Users\essam\OneDrive\Desktop\IT-Blocks_Task\Code\IT-Blocks_Task\Service\obj\Debug\netcoreapp2.2\Service.csproj.CoreCompileInputs.cache
+C:\Users\essam\OneDrive\Desktop\IT-Blocks_Task\Code\IT-Blocks_Task\Service\obj\Debug\netcoreapp2.2\Service.AssemblyInfoInputs.cache
+C:\Users\essam\OneDrive\Desktop\IT-Blocks_Task\Code\IT-Blocks_Task\Service\obj\Debug\netcoreapp2.2\Service.AssemblyInfo.cs
+C:\Users\essam\OneDrive\Desktop\IT-Blocks_Task\Code\IT-Blocks_Task\Service\obj\Debug\netcoreapp2.2\Service.dll
+C:\Users\essam\OneDrive\Desktop\IT-Blocks_Task\Code\IT-Blocks_Task\Service\obj\Debug\netcoreapp2.2\Service.pdb
+C:\Users\essam\OneDrive\Desktop\IT-Blocks_Task\Code\IT-Blocks_Task\Service\bin\Debug\netcoreapp2.2\Domain.dll
+C:\Users\essam\OneDrive\Desktop\IT-Blocks_Task\Code\IT-Blocks_Task\Service\bin\Debug\netcoreapp2.2\Repository.dll
+C:\Users\essam\OneDrive\Desktop\IT-Blocks_Task\Code\IT-Blocks_Task\Service\bin\Debug\netcoreapp2.2\Repository.pdb
+C:\Users\essam\OneDrive\Desktop\IT-Blocks_Task\Code\IT-Blocks_Task\Service\bin\Debug\netcoreapp2.2\Domain.pdb
+C:\Users\essam\OneDrive\Desktop\IT-Blocks_Task\Code\IT-Blocks_Task\Service\obj\Debug\netcoreapp2.2\Service.csproj.CopyComplete

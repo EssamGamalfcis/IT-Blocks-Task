@@ -1,0 +1,66 @@
+﻿@model IEnumerable<Domain.BookLoan>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Loan_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <input type="button" value="Create New" class="btn btn-primary" onclick="location.href='@Url.Action("Create", "Loan")'" />
+</p>
+<table class="table table-striped table-dark table-bordered">
+    <thead>
+        <tr>
+
+            <th>
+                @Html.DisplayName("Book Name")
+            </th>
+            <th>
+                @Html.DisplayName("Person First Name")
+            </th>
+            <th>
+                @Html.DisplayName("Person Last Name")
+            </th>
+            <th>
+                @Html.DisplayName("Date Borrowed")
+            </th>
+            <th>
+                @Html.DisplayName("Returned Date")
+            </th>
+
+           <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.Book.BookName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Loan.LoanPFname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Loan.LoanPLname)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LoanDate)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.LoanReturnDate)
+            </td>
+          
+            <td>
+
+                <input type="button" value="Edit" class="btn btn-primary" onclick="location.href='@Url.Action("Edit", "Loan")?id=' + @item.BlId" />
+                <input type="button" value="Delete" class="btn btn-danger" onclick="location.href='@Url.Action("Delete", "Loan")?id=' + @item.BlId" />
+
+
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

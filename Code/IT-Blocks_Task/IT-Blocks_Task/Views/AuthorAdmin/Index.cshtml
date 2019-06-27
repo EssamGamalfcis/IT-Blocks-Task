@@ -1,0 +1,61 @@
+﻿@model IEnumerable<Domain.User>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Author_Admin_Layout.cshtml";
+}
+
+<h1>Index</h1>
+
+<p>
+    <input type="button" value="Create New" class="btn btn-primary" onclick="location.href='@Url.Action("Create", "AuthorAdmin")'" />
+</p>
+<h2>
+    <p class="text-danger">@TempData["CustomError"]</p>
+</h2>
+
+<table class="table table-striped table-dark table-bordered">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayName("Author First Name")
+            </th>
+            <th>
+                @Html.DisplayName("Author Last Name")
+            </th>
+            <th>
+                @Html.DisplayName("Login Id")
+            </th>
+            <th>
+                @Html.DisplayName("Login Password")
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserFname)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserLname)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserLoginId)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.UserLoginPasswrod)
+                </td>
+
+                <td>
+                    <input type="button" value="Edit" class="btn btn-primary" onclick="location.href='@Url.Action("Edit", "AuthorAdmin")?id=' + @item.UserId" />
+                    <input type="button" value="Details" class="btn btn-info" onclick="location.href='@Url.Action("Details", "AuthorAdmin")?id=' + @item.UserId" />
+                    <input type="button" value="Delete" class="btn btn-danger" onclick="location.href='@Url.Action("Delete", "AuthorAdmin")?id=' + @item.UserId" />
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
